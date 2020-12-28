@@ -10,7 +10,7 @@
       - [Parameter Initialization](#parameter-initialization)
       - [Gated Cells](#gated-cells)
   - [Long Short Term Memory (LSTM) Networks](#long-short-term-memory-lstm-networks)
-    - [How does it works?](#how-does-it-works)
+    - [How does it work?](#how-does-it-work)
       - [Forget](#forget)
       - [Store](#store)
       - [Update](#update)
@@ -29,7 +29,7 @@ To model sequences, we need to:
 
 ## Recurrent Neural Network (RNN)
 
-The answer to the the mentioned problems: **Recurrent Neural NEtworks(RNN)**
+The answer to the the mentioned problems: **Recurrent Neural Networks(RNN)**
 
 ![image](Image/StandardNN.png)
 
@@ -91,7 +91,7 @@ LSTM cells are able to track information throughout many timesteps.
 Information is added or removed through structures called **gates**.  
 Gates optionally let information through, for example via a sigmoid neural net later and pointwise multiplication.  
 
-### How does it works?
+### How does it work?
 
 ![Image](Image/LSTM_1.png)
 
@@ -123,10 +123,10 @@ Gates optionally let information through, for example via a sigmoid neural net l
 
 1. Maintain a **separate cell state** from what is outputed
 2. Use **gates** to control the **flow of information**
-     - **Forget** gate get rid of irrelevant information
+     - **Forget** gate gets rid of irrelevant information
      - **Store** relevant information from current input
      - Selectively **update** cell state
-     - **Output** gate returns a foltered version of the cell state
+     - **Output** gate returns a filtered version of the cell state
 3. Backpropagation through time with **uninterrupted gradient flow**
 
 ## Summary
@@ -134,5 +134,5 @@ Gates optionally let information through, for example via a sigmoid neural net l
 1. RNNs are well suited for **sequence modeling** tasks
 2. Model sequences via a **recurrence relation**
 3. Training RNNs with **backpropagation through time**
-4. Gated cells like **LSTMs** let us mdoel **long-term dependencies**
+4. Gated cells like **LSTMs** let us model **long-term dependencies**
 5. Models for music generation, classidication, machine translation, etc.
