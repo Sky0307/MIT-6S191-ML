@@ -36,7 +36,7 @@ The purpose of **bias** is to shift your activation function to the left or to t
 
 ## Simplified Version of The Perceptron
 
-![image](Image/SimplifiedPerceptron.png.png)
+![image](Image/SimplifiedPerceptron.png)
 
 1. Take the inputs, do a dot product with the weights
 2. Add the bias
